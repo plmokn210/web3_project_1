@@ -1,4 +1,5 @@
 //https://eth-ropsten.alchemyapi.io/v2/HvOQEppk2xp-SCGmTB0hCHm6JrQOk5Xg
+require("dotenv").config();
 
 require('@nomiclabs/hardhat-waffle');
 
@@ -7,7 +8,7 @@ module.exports = {
   networks: {
     ropsten: {
       url: "https://eth-ropsten.alchemyapi.io/v2/HvOQEppk2xp-SCGmTB0hCHm6JrQOk5Xg",
-      accounts: []
+      accounts: [process.env.PRIVATE_KEY],
     },
   },
 };
