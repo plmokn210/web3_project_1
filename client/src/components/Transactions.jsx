@@ -4,7 +4,13 @@ import dummyData from "../utils/dummyData";
 import { shortenAddress } from "../utils/shortenAddress";
 
 const TransactionCard = ({ addressTo, addressFrom, timestamp, amount, url }) => {
-  return 'transaction'
+  return (
+    <div className="bg-[#181918] m-4 flex flex-1 2xl:min-w-[450px] 2xl:max-w-[500px] sm:min-2-[270px] sm:max-w-[300px] flex-col p-3 rounded-md hover:shadow-2xl">
+      <div className="flex flex-full items-center w-full mt-3">
+
+      </div>
+    </div>
+  );
 }
 
 const Transactions = () => {
